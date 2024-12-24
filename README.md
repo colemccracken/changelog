@@ -6,7 +6,7 @@ Are you lazy and writing commit messages that look like `fix: docs`? Use this CL
 git log
 
 commit ca5f7cbbf503bb80d57cfe51d639a5d6c4dc23ce (HEAD -> main)
-Author: Cole McCracken <colemccracken@gmail.com>
+Author: <hiding my email>
 Date:   Tue Dec 24 11:59:33 2024 -0500
 
     initial commit
@@ -38,6 +38,13 @@ pnpm add -g ts-node
 ## Usage
 
 This will generate a changelog for this repo for the last 30 days!
+Set env vars
+
+```bash
+export GROQ_API_KEY=<find your key at https://console.groq.com/keys>
+```
+
+Run
 
 ```bash
 ts-node src/main.ts . --num_days 30 --exclude "chore"
